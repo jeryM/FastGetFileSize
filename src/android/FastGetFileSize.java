@@ -56,8 +56,8 @@ public class FastGetFileSize extends CordovaPlugin {
 			} catch (Exception e) {
 				callbackContext.error(e.getMessage());
 			}
-		//}
-		//callbackContext.error("未发现外部存储");
+		}
+		callbackContext.error("未发现外部存储");
 		
 	}
 }
