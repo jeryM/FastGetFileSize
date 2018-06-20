@@ -49,7 +49,7 @@ public class FastGetFileSize extends CordovaPlugin {
 					if (file.exists() && file.isFile()){ 
 						 JSONObject json = new JSONObject();
 						 json.put("fileSize",file.length());
-						 json.put("fileAbsolutePage",file.getAbsolutePath());					 
+						 json.put("fileAbsolutePath",file.getAbsolutePath());					 
 						 callbackContext.success(json);
 					}else{  
 						 callbackContext.error("file doesn't exist or is not a file");  
