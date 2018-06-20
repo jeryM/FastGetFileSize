@@ -41,7 +41,7 @@ public class FastGetFileSize extends CordovaPlugin {
     }
 	
 	private void getFileSize(String externalRootDirectory,String filepath,CallbackContext callbackContext){
-		if( !"" = externalRootDirectory && null != externalRootDirectory && "externalRootDirectory".equals(externalRootDirectory)){
+		if( "" != externalRootDirectory && null != externalRootDirectory && "externalRootDirectory".equals(externalRootDirectory)){
 			if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
 				try {
 					//Environment.getExternalStorageDirectory().getAbsolutePath()
