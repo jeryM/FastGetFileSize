@@ -41,10 +41,11 @@ public class FastGetFileSize extends CordovaPlugin {
     }
 	
 	private void getFileSize(String externalRootDirectory,String filepath,CallbackContext callbackContext){
-		if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
+		//if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
 			try {
-				File file= new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/"+filepath);
-				callbackContext.success("file.exists():"+file.exists()+",file.isFile():"+file.isFile());
+				//File file= new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/"+filepath);
+				//callbackContext.success("file.exists():"+file.exists()+",file.isFile():"+file.isFile());
+				callbackContext.success(Environment.getExternalStorageDirectory().getAbsolutePath()+"/"+filepath);
 				//if (file.exists() && file.isFile()){ 
                      //JSONObject json = new JSONObject();
                      //json.put("fileSize",file.length());
@@ -56,8 +57,8 @@ public class FastGetFileSize extends CordovaPlugin {
 			} catch (Exception e) {
 				callbackContext.error(e.getMessage());
 			}
-		}
-		callbackContext.error("未发现外部存储");
+		//}
+		//callbackContext.error("未发现外部存储");
 		
 	}
 }
