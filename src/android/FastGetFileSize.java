@@ -26,7 +26,7 @@ public class FastGetFileSize extends CordovaPlugin {
 		if(action.equals("getFileSize")){
 			String externalRootDirectory = args.getString(0);
 			String filepath = args.getString(1);
-			this.getFileSize();
+			this.getFileSize(externalRootDirectory,filepath,callbackContext);
 		}
         return false;
     }
