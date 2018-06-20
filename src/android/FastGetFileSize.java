@@ -41,19 +41,18 @@ public class FastGetFileSize extends CordovaPlugin {
     }
 	
 	private void getFileSize(String externalRootDirectory,String filepath,CallbackContext callbackContext){
-		//if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
+		if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
 			try {
-				//File file= new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/"+filepath);
+				File file= new File(Environment.getExternalStorageDirectory().getAbsolutePath()+File.separator+filepath);
 				//callbackContext.success("file.exists():"+file.exists()+",file.isFile():"+file.isFile());
-				callbackContext.success("this is getFileSize");
-				//if (file.exists() && file.isFile()){ 
-                     //JSONObject json = new JSONObject();
-                     //json.put("fileSize",file.length());
-                     //json.put("fileAbsolutePage",file.getAbsolutePath());					 
-                     //callbackContext.success(""+file.length());
-                //}else{  
-                     //callbackContext.error("file doesn't exist or is not a file");  
-                //}  
+				if (file.exists() && file.isFile()){ 
+                     JSONObject json = new JSONObject();
+                     json.put("fileSize",file.length());
+                     json.put("fileAbsolutePage",file.getAbsolutePath());					 
+                     callbackContext.success(""+file.length());
+                }else{  
+                     callbackContext.error("file doesn't exist or is not a file");  
+                }  
 			} catch (Exception e) {
 				callbackContext.error(e.getMessage());
 			}
