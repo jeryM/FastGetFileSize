@@ -44,12 +44,11 @@ public class FastGetFileSize extends CordovaPlugin {
 		if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
 			try {
 				File file= new File(Environment.getExternalStorageDirectory().getAbsolutePath()+File.separator+filepath);
-				//callbackContext.success("file.exists():"+file.exists()+",file.isFile():"+file.isFile());
 				if (file.exists() && file.isFile()){ 
                      JSONObject json = new JSONObject();
                      json.put("fileSize",file.length());
                      json.put("fileAbsolutePage",file.getAbsolutePath());					 
-                     callbackContext.success(""+file.length());
+                     callbackContext.success(json);
                 }else{  
                      callbackContext.error("file doesn't exist or is not a file");  
                 }  
