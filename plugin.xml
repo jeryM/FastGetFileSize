@@ -3,7 +3,7 @@
 <name>FastGetFileSize</name>
 <author email="1265085976@qq.com" href="https://mail.qq.com">jery.M</author>
 <js-module name="FastGetFileSize" src="www/FastGetFileSize.js">
-<clobbers target="cordova.plugins.FastGetFileSize" />
+<clobbers target="FastGetFileSize" />
 </js-module>
 <platform name="android">
 <config-file parent="/*" target="res/xml/config.xml">
