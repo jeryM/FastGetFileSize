@@ -45,7 +45,7 @@ public class FastGetFileSize extends CordovaPlugin {
 			try {
 				//File file= new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/"+filepath);
 				//callbackContext.success("file.exists():"+file.exists()+",file.isFile():"+file.isFile());
-				callbackContext.success(Environment.getExternalStorageDirectory().getAbsolutePath()+"/"+filepath);
+				callbackContext.success("this is getFileSize");
 				//if (file.exists() && file.isFile()){ 
                      //JSONObject json = new JSONObject();
                      //json.put("fileSize",file.length());
