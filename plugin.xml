@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova.plugin.fastGetFileSize" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>FastGetFileSize</name>
+<author email="1265085976@qq.com" href="https://mail.qq.com">jery.M</author>
+<js-module name="FastGetFileSize" src="www/FastGetFileSize.js">
+<clobbers target="cordova.plugins.FastGetFileSize" />
+</js-module>
+<platform name="android">
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="FastGetFileSize">
+<param name="android-package" value="cordova.plugin.fastGetFileSize.FastGetFileSize" />
+</feature>
+</config-file>
+<config-file parent="/*" target="AndroidManifest.xml">
+</config-file>
+<source-file src="src/android/FastGetFileSize.java" target-dir="src/cordova/plugin/fastGetFileSize/FastGetFileSize" />
+</platform>
+</plugin>
