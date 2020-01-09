@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova.plugin.fast.get.file.size" version="1.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova.plugin.fast.get.file.size" version="1.0.3" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 <name>FastGetFileSize</name>
 <author email="1265085976@qq.com" href="https://mail.qq.com">jery.M</author>
 <js-module name="FastGetFileSize" src="www/FastGetFileSize.js">
