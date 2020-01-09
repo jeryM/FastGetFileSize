@@ -1,7 +1,7 @@
 {
-  "name": "cordova.plugin.fastGetFileSize",
+  "name": "cordova.plugin.fast.get.file.size",
   "version": "1.0.1",
-  "description": "",
+  "description": "快速获得文件大小",
   "cordova": {
     "id": "cordova.plugin.fastGetFileSize",
     "platforms": []
@@ -9,6 +9,18 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "",
-  "license": "ISC"
+  "author": "jeryM",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeryM/FastGetFileSize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeryM/FastGetFileSize/issues"
+  },
+  "homepage": "https://github.com/jeryM/FastGetFileSize#readme"
 }
