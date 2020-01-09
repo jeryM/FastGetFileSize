@@ -1,6 +1,8 @@
 # FastGetFileSize
 快速获得文件大小
 
+此分支用于上传到npm仓库
+
 #### Installation
 
 `cordova plugin add https://github.com/jeryM/FastGetFileSize.git`
